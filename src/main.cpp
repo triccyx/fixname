@@ -2,6 +2,7 @@
 
 #include "xmlfix.h"
 
+/*To be used with bash find and pipe*/
 int main()
 {
     std::string line;
@@ -9,10 +10,10 @@ int main()
     while (std::getline(std::cin, line))
     {
         XmlFix fix;
-        if(fix.change(line))
+        if (fix.change(line))
             counter++;
     }
-    std::cout << "DONE on file number:"<<counter << std::endl;
+    std::cout << "DONE on file number:" << counter << std::endl;
 
     return 1;
 }

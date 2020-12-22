@@ -6,6 +6,6 @@
 class XmlFix
 {
     public:
-        bool change(const std::string& toChange);
+        bool change(const std::string& toChange) const;
         bool containsPatternToChange(const std::string& toCheck) const;
 };

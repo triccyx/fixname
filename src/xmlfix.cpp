@@ -4,7 +4,7 @@
 #include <regex>
 #include <iostream>
 
-bool XmlFix::change(const std::string &toChange)
+bool XmlFix::change(const std::string &toChange) const
 {
     pugi::xml_document root;
     pugi::xml_parse_result result = root.load_file(toChange.c_str(), pugi::parse_default | pugi::parse_declaration | pugi::parse_doctype | pugi::parse_comments);
