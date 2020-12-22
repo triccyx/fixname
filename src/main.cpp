@@ -1,20 +1,18 @@
 #include <iostream>
-#include <sstream>
 
 #include "xmlfix.h"
 
 int main()
 {
-    /*
-    std::stringstream ss;
     std::string line;
+    int counter{0};
     while (std::getline(std::cin, line))
     {
-        ss<<line<<std::endl;
+        XmlFix fix;
+        if(fix.change(line))
+            counter++;
     }
-    std::cout << ss.str() << std::endl;
-    */
-    XmlFix fix;
-    fix.change("./test.xml");
+    std::cout << "DONE on file number:"<<counter << std::endl;
+
     return 1;
 }
