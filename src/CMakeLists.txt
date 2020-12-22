@@ -10,10 +10,10 @@
 project(fixapp)
 
 set(FixAppSrc     main.cpp
-                          
+                  xmlfix.cpp        
                         )
 
-set(FixAppHdr    
+set(FixAppHdr    xmlfix.h       
                            
                        )
 
