@@ -53,3 +53,5 @@ FetchContent_Declare(
   endif()
 
 add_subdirectory(src)
+
+install(FILES ${CMAKE_CURRENT_LIST_DIR}/resource/test.xml DESTINATION ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
