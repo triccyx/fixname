@@ -1,5 +1,10 @@
 # 1. Build
-
+```
+mkdir build
+cd build
+cmake ..
+make install
+```
 # 2. Usage
 Use with find:  
 ```
