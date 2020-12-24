@@ -43,7 +43,7 @@ bool XmlFix::change(const std::string &toChange) const
 
     if (changed)
     {
-        bool res = root.save_file(toChange.c_str());
+        bool res = root.save_file(toChange.c_str(),"    ");
         if (res)
             return true;
     }
